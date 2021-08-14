@@ -4,6 +4,7 @@ import UserScreen from "./UserScreen";
 import VolunteerScreen from "./VolunteerScreen";
 import SupportScreen from "./SupportScreen";
 import AccountScreen from "./AccountScreen";
+import ChatBoxScreen from "./ChatBoxScreen";
 
 export {
     SignInScreen,
@@ -11,5 +12,6 @@ export {
     UserScreen,
     VolunteerScreen,
     SupportScreen,
-    AccountScreen
+    AccountScreen,
+    ChatBoxScreen
 };

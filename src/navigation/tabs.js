@@ -2,7 +2,7 @@ import React from 'react';
 import { Image } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import { UserScreen, SupportScreen, AccountScreen } from '../screens';
+import { UserScreen, SupportScreen, AccountScreen, ChatBoxScreen } from '../screens';
 import { COLORS, icons } from '../../constants';
 
 const Tab = createBottomTabNavigator();
@@ -54,7 +54,7 @@ const Tabs = () => {
 
             <Tab.Screen
                 name="Hộp thư"
-                component={UserScreen}
+                component={ChatBoxScreen}
                 options={{
                     tabBarIcon: ({ focused }) => {
                         return (<Image
