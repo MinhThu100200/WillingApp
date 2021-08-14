@@ -18,6 +18,7 @@ export const support = require('../assets/icons/support.png');
 export const immediately = require('../assets/icons/immediately.png');
 export const history = require('../assets/icons/supporthistory.png');
 export const current = require('../assets/icons/supportcurrent.png');
+export const chatbox = require('../assets/icons/chatic.png');
 
 export default {
     back,
@@ -38,5 +39,6 @@ export default {
     chat,
     book,
     history,
-    current
+    current,
+    chatbox
 };
