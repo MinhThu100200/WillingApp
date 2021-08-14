@@ -15,12 +15,18 @@ const HistorySupport = () => {
                 buttonContainerStyle={{backgroundColor: COLORS.lightBlue}}
                 textStyle={{color: '#fff'}}
             />
+            <Spacer />
+            <Spacer />
+            <Spacer />
+            <Spacer />
             <Image source={icons.history} style={styles.default}/>
             <Spacer />
             <Text style={{fontWeight: 'bold'}}>Cùng xem lại yêu cầu hỗ trợ bạn đã thực hiện nào!</Text>
-            <Spacer>
-                <Text>Dễ dàng tìm lại các dịch vụ mà bạn đã yêu cầu hỗ trợ trong phần lịch sử nha!</Text>
-            </Spacer>
+            <View style={{justifyContent: 'center', alignItems: 'center'}}>
+                <Spacer>
+                    <Text>Dễ dàng tìm lại các dịch vụ mà bạn đã yêu cầu hỗ trợ trong phần lịch sử nha!</Text>
+                </Spacer>
+            </View>      
         </View>
         
     );

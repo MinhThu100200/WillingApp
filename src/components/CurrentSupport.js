@@ -11,13 +11,18 @@ const CurentSupport = () => {
     return (
         <View style={{justifyContent: 'center' ,alignItems: 'center' }}>
             <Spacer />
+            <Spacer />
+            <Spacer />
+            <Spacer />
             <Image source={icons.current} style={styles.default}/>
 
             <Spacer />
             <Text style={{fontWeight: 'bold'}}>Bạn chưa yêu cầu hỗ trợ nào nè bạn ơi!</Text>
-            <Spacer>
-                <Text>Những yêu cầu đã được gửi đến và xác nhận, đang được thực hiện đều sẽ được hiển thị ở đây để bạn có thể dễ dàng theo dõi!</Text>
-            </Spacer>
+            <View style={{justifyContent: 'center', alignItems: 'center'}}>
+                <Spacer>
+                    <Text>Những yêu cầu đã được gửi đến và xác nhận, đang được thực hiện đều sẽ được hiển thị ở đây để bạn có thể dễ dàng theo dõi!</Text>
+                </Spacer>
+            </View>
             
         </View>
         

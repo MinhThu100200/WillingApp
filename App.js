@@ -16,9 +16,10 @@ const App = () => {
           headerShown: false
         }}
       >
-        <Stack.Screen name="HomeUser" component={Tabs} />
-        <Stack.Screen name="SignUp" component={SignUpScreen} />
         <Stack.Screen name="SignIn" component={SignInScreen} />
+        <Stack.Screen name="SignUp" component={SignUpScreen} />
+        
+        
       </Stack.Navigator>
     </NavigationContainer>
   );
