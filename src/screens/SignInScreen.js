@@ -1,12 +1,11 @@
 import React from 'react';
-import {ImageBackground, Image, StyleSheet, Text, View, TextInput, Pressable } from 'react-native';
-import Cards from "../components/Cards";
-import StyledButton from "../components/StyledButton";
+import { Image, StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
+import { Button } from 'react-native-elements';
 import {LinearGradient} from 'expo-linear-gradient';
 import { RadioButton } from 'react-native-paper';
-import { images } from '../../constants';
+import { COLORS, images } from '../../constants';
 
-function Login(props) {
+function Login({navigation}) {
   const [text, onChangeText] = React.useState("");
   const [number, onChangeNumber] = React.useState(null);
   const [checked, setChecked] = React.useState('first');
@@ -51,10 +50,15 @@ function Login(props) {
                 />
               </View>
               <View style={styles.interacts}>
-              <StyledButton></StyledButton>
+              <Button title="Đăng nhập" onPress={() => navigation.navigate('Home')} buttonStyle={{width: 100, backgroundColor: COLORS.primary}} />
               <View style={styles.ask}>
-                <Pressable style={styles.askText}><Text>Đăng ký mới</Text></Pressable>
-                <Pressable style={styles.askText}><Text>Quên mật khẩu?</Text></Pressable>
+                <TouchableOpacity onPress={() =>navigation.navigate('SignUp')}>
+                  <Text>Đăng ký mới</Text>
+                </TouchableOpacity>
+                <TouchableOpacity>
+                  <Text style={{marginLeft: 100}}>Quên mật khẩu?</Text>
+                </TouchableOpacity>
+                
               </View>
               </View>
             </View>
@@ -141,9 +145,10 @@ const styles = StyleSheet.create({
         flex: 3,
       },
       interacts: {
-        backgroundColor: "white",
+        alignItems: 'center',
+        justifyContent: 'center',
         padding: 20,
-        paddingBottom: 170,
+        paddingBottom: 200,
       },
       ask: {
         flexDirection: "row",

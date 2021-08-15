@@ -5,6 +5,9 @@ import VolunteerScreen from "./VolunteerScreen";
 import SupportScreen from "./SupportScreen";
 import AccountScreen from "./AccountScreen";
 import ChatBoxScreen from "./ChatBoxScreen";
+import WelcomeScreen from "./WelcomeScreen";
+import AgreeScreen from "./AgreeScreen";
+import NotificationScreen from "./Notification";
 
 export {
     SignInScreen,
@@ -13,5 +16,8 @@ export {
     VolunteerScreen,
     SupportScreen,
     AccountScreen,
-    ChatBoxScreen
+    ChatBoxScreen,
+    AgreeScreen,
+    WelcomeScreen, 
+    NotificationScreen
 };

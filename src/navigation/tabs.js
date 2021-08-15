@@ -2,7 +2,7 @@ import React from 'react';
 import { Image } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import { UserScreen, SupportScreen, AccountScreen, ChatBoxScreen } from '../screens';
+import { UserScreen, SupportScreen, AccountScreen, ChatBoxScreen, NotificationScreen } from '../screens';
 import { COLORS, icons } from '../../constants';
 
 const Tab = createBottomTabNavigator();
@@ -72,7 +72,7 @@ const Tabs = () => {
 
             <Tab.Screen
                 name="Thông báo"
-                component={UserScreen}
+                component={NotificationScreen}
                 options={{
                     tabBarIcon: ({ focused }) => {
                         return (<Image
@@ -84,8 +84,7 @@ const Tabs = () => {
                                 tintColor: focused ? COLORS.primary : COLORS.secondary 
                             }}
                         />);
-                    },
-                    
+                    },                   
                 }}/>
 
             <Tab.Screen
