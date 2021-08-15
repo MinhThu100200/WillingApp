@@ -1,24 +1,26 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { SignInScreen, SignUpScreen } from './src/screens';
+import { SignInScreen, SignUpScreen, WelcomeScreen, AgreeScreen } from './src/screens';
 //import { Provider as LocationProvider } from './src/context/LocationContext';
+import { navigationRef } from './src/navigationRef';
 
 import Tabs from './src/navigation/tabs';
 const Stack = createStackNavigator();
 
 const App = () => {
   return (
-    <NavigationContainer>
+    <NavigationContainer ref={navigationRef}>
       <Stack.Navigator
-        initialRouteName="HomeUser"
         screenOptions={{
           headerShown: false
         }}
       >
-        <Stack.Screen name="SignIn" component={SignInScreen} />
+        <Stack.Screen name="Welcome" component={WelcomeScreen} />
         <Stack.Screen name="SignUp" component={SignUpScreen} />
-        <Stack.Screen name="HomeUser" component={Tabs}/>
+        <Stack.Screen name="Agreement" component={AgreeScreen} />
+        <Stack.Screen name="SignIn" component={SignInScreen} />
+        <Stack.Screen name="Home" component={Tabs} />
         
       </Stack.Navigator>
     </NavigationContainer>
@@ -27,7 +29,6 @@ const App = () => {
 
 export default () => {
   return (
-      <App/>
-    
+      <App/> 
   );
 };

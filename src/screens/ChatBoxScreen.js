@@ -7,7 +7,7 @@ import EmptyChat from '../components/EmptyChat';
 import Spacer from '../components/Spacer';
 
 
-const SupportScreen = () => {
+const ChatBoxScreen = () => {
     function renderHearder() {
         return (
             <View style={{justifyContent: 'center', alignItems: 'center', backgroundColor: COLORS.primary}}>
@@ -31,4 +31,4 @@ const styles = StyleSheet.create({
    
 });
 
-export default SupportScreen;
+export default ChatBoxScreen;
