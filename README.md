@@ -1,2 +1,2 @@
 # WillingApp-React Native
-Willing always support you <3
+Willing always supports you <3
